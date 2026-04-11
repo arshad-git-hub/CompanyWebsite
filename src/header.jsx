@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faDelicious } from '@fortawesome/free-brands-svg-icons';
 import { techNewsIndia } from './Data/techNews';
 import { Link,NavLink } from 'react-router-dom';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Header() {
 
@@ -53,7 +54,8 @@ function Header() {
             }} */}
 
         <div className='hamburger'>
-          <FontAwesomeIcon icon={faDelicious}/>
+          {/* <FontAwesomeIcon icon={faDelicious}/> */}
+          <GiHamburgerMenu />
         </div>
 
         <div className='social'>

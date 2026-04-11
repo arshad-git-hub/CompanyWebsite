@@ -140,7 +140,7 @@ p{
   z-index: 99;
 }
 .hamburger{
-  font-size: 3.5rem;
+  font-size: 5rem;
   cursor: pointer;
   color: var(--orange);
   z-index: 99;
@@ -185,6 +185,7 @@ p{
   cursor: pointer;
   scroll-behavior: smooth;
   padding: 0;
+  z-index: 999999;
 }
 .top img{
   width: 4rem;
