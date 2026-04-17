@@ -1,4 +1,5 @@
 import mainLogo from './images/logo.png';
+import headerBg from './images/header-bg.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faDelicious } from '@fortawesome/free-brands-svg-icons';
 import { techNewsIndia } from './Data/techNews';
@@ -16,6 +17,8 @@ function Header() {
 
       <div className="headerContainer">
 
+        <img src={headerBg} alt="header-bg" />
+
         <div className='logo' onClick={homePage}>
           <img className='headerImg' src={mainLogo} alt='pic'/>
           <h3>thougts2binary</h3>
@@ -23,18 +26,18 @@ function Header() {
 
         <div className="l-logo">
           {/* <h1>thougts2binary</h1> */}
-          <h1>Hello!</h1>
+          {/* <h1>Hello!</h1> */}
         </div>
 
         <div className='nav-list'>
             <Link to="/">Home</Link>
-            <Link to="/">Services</Link>
-            <Link to="/">Technologies</Link>
-            <Link to="/">Products</Link>
-            <Link to="/">Testimonials</Link>
-            <Link to="/">Team</Link>
+            <Link to="/" className="nav-hide">Services</Link>
+            <Link to="/" className="nav-hide">Technologies</Link>
+            <Link to="/" className="nav-hide">Products</Link>
+            <Link to="/" className="nav-hide">Testimonials</Link>
+            <Link to="/" className="nav-hide">Team</Link>
             <NavLink to="/career" >Career</NavLink>
-            <NavLink to="/blog" >Blog</NavLink>
+            <NavLink to="/blog" >Blogs</NavLink>
             <NavLink to="/contact-us" >Contact</NavLink>
         </div>
 
