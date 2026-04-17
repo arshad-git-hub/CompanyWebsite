@@ -22,7 +22,8 @@ function Header() {
         </div>
 
         <div className="l-logo">
-          <h1>thougts2binary</h1>
+          {/* <h1>thougts2binary</h1> */}
+          <h1>Hello!</h1>
         </div>
 
         <div className='nav-list'>
