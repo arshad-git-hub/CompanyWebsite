@@ -103,7 +103,7 @@ p{
 }
 .nav-list a, .nav-list2 a{
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   color: var(--black);
   transition: 0.3s ease;
@@ -209,6 +209,15 @@ p{
   font-size: 1.8rem;
   font-weight: 600;
 }
+
+/* ACTIVE LINK */
+
+.nav-list .nav-links{
+  color: var(--orange);
+}
+/* .active{
+  color: red;
+} */
 
 /* ============= SECTION ============== */ 
 
@@ -1667,9 +1676,9 @@ form h1{
   .header .nav-list .nav-hide{
     display: none;
   }
-   .header .nav-list .nav-hide.active{
+  /* .header .nav-list .nav-hide.active{
     display: block;
-  }
+  } */
    .header .nav-list a{
     font-size: 1.5rem;
    }

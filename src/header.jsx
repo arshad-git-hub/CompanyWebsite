@@ -30,15 +30,15 @@ function Header() {
         </div>
 
         <div className='nav-list'>
-            <Link to="/">Home</Link>
-            <Link to="/" className="nav-hide">Services</Link>
-            <Link to="/" className="nav-hide">Technologies</Link>
-            <Link to="/" className="nav-hide">Products</Link>
-            <Link to="/" className="nav-hide">Testimonials</Link>
-            <Link to="/" className="nav-hide">Team</Link>
-            <NavLink to="/career" >Career</NavLink>
-            <NavLink to="/blog" >Blogs</NavLink>
-            <NavLink to="/contact-us" >Contact</NavLink>
+            <NavLink to="/" className={({isActive}) => isActive ? "active nav-links" : "nav-link"}>Home</NavLink>
+            <NavLink to="/" className="nav-hide">Services</NavLink>
+            <NavLink to="/" className="nav-hide">Technologies</NavLink>
+            <NavLink to="/" className="nav-hide">Products</NavLink>
+            <NavLink to="/" className="nav-hide">Testimonials</NavLink>
+            <NavLink to="/" className="nav-hide">Team</NavLink>
+            <NavLink to="/career" className={({isActive}) => isActive ? "active nav-links" : "nav-link"}>Career</NavLink>
+            <NavLink to="/blog" className={({isActive}) => isActive ? "active nav-links" : "nav-link"}>Blogs</NavLink>
+            <NavLink to="/contact-us" className={({isActive}) => isActive ? "active nav-links" : "nav-link"}>Contact</NavLink>
         </div>
 
         <div className='nav-list2'>
